@@ -258,6 +258,10 @@ namespace Practica_LINQ_CI
 
             // 33. Obtener los productos cuyo nombre tenga más de 10 caracteres.
             // 34. Obtener los productos cuyo stock sea un número primo.
+            ////var sr = from i in lst where i.Stock > 1 && i.Stock % 2 != 0 select i;
+
+            ////foreach ( var s in sr )
+            ////    Console.WriteLine( s.Stock );
 
             #region 35. Obtener los productos cuyo nombre contenga la palabra "Pro".
             //var let = lst.Where(x => x.Nombre.ToLower().Contains("pro")); 
@@ -277,7 +281,12 @@ namespace Practica_LINQ_CI
             //    Console.WriteLine(n.Stock);
             #endregion
             // 37. Obtener los productos que tengan una descripción con más de 20 caracteres.
-            // 38. Obtener los productos cuyo precio sea un número redondo (sin decimales).
+            #region  // 38. Obtener los productos cuyo precio sea un número redondo (sin decimales).
+            //var de = lst.Where(x => x.Precio % 1 == 0);
+
+            //foreach(var x in de)
+            //    Console.WriteLine(x.Precio);
+            #endregion
             // 39. Obtener los productos que tengan exactamente dos palabras en su nombre.
             #region 40. Obtener la cantidad de productos que no pertenecen a la categoría "General".
 
