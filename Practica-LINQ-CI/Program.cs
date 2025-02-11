@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace Practica_LINQ_CI
 {
@@ -58,8 +60,6 @@ namespace Practica_LINQ_CI
             //foreach (var item in obt)
             //    Console.WriteLine(item);
             #endregion
-
-
 
 
             #region 3. Obtener los productos cuyo precio sea mayor a 500.
@@ -185,8 +185,34 @@ namespace Practica_LINQ_CI
             //var cat=lst.Count(x=>x.Categoria=="Audio");
             //Console.WriteLine(cat);
             #endregion
-            // 22. Agrupar los productos por categoría.
-            // 23. Obtener la categoría con más productos.
+            #region // 22. Agrupar los productos por categoría.
+
+            //var agru = from i in lst group i by new { i.Categoria } into total select total;
+
+            //foreach (var item in agru)
+            //    Console.WriteLine($"{item.Key} ");
+            #endregion
+
+
+            #region // 23. Obtener la categoría con más productos.
+            //var agru = from i in lst
+            //           group i by new { i.Categoria } into total
+            //           select new
+            //           {
+
+            //               categoria = total.Key.Categoria,
+            //               quant = total.Count(),
+
+
+
+
+            //           };
+
+            //foreach (var item in agru)
+            //    Console.WriteLine($" {item.categoria}  | {item.quant}");
+            #endregion
+
+
             #region // 24. Obtener el stock total de todos los productos.
             //var tal =lst.Sum(x => x.Stock);
             //Console.WriteLine(tal);
@@ -200,7 +226,12 @@ namespace Practica_LINQ_CI
             //    Console.WriteLine(s.Descripcion);
 
             #endregion
-            // 28. Obtener el promedio de stock de los productos de la categoría "Almacenamiento".
+            #region // 28. Obtener el promedio de stock de los productos de la categoría "Almacenamiento".
+
+            //var ne = lst.Where(x => x.Categoria == "Almacenamiento").Average(x=>x.Stock);
+            //Console.WriteLine(ne);
+            #endregion
+
 
             // 29. Obtener los productos creados en una fecha específica (20/12/2022).
             #region 30. Obtener los productos cuya ID sea par.
