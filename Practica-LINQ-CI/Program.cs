@@ -74,7 +74,13 @@ namespace Practica_LINQ_CI
             //Console.WriteLine($" {men.Nombre} | {men.Stock}");
 
             #endregion
-            // 5. Obtener los productos de la categoría "Electrónica".
+            #region // 5. Obtener los productos de la categoría "Electrónica".
+
+            //var dt = lst.Where(i=> i.Categoria == "Electrónica").ToList();
+            //foreach(var item in dt)
+            //    Console.WriteLine(item.Nombre);
+            #endregion
+
 
             #region 6. Obtener los productos cuyo nombre comience con la letra 'L'.
             //var let = lst.Where(x => x.Nombre.StartsWith("L"));
@@ -138,7 +144,7 @@ namespace Practica_LINQ_CI
             #endregion
 
             #region // 14. Obtener la cantidad total de productos en la lista.
-            
+
 
 
             #endregion
@@ -147,7 +153,12 @@ namespace Practica_LINQ_CI
             //decimal res= lst.Sum(p=> p.Precio);
             //Console.WriteLine(res);
             #endregion
-            // 16. Obtener el precio promedio de los productos.
+            #region // 16. Obtener el precio promedio de los productos.
+
+            //var prom = lst.Average(x => x.Precio);
+
+            //    Console.WriteLine(prom);
+            #endregion
             #region 17. Obtener el producto más caro.
             //var mas= lst.Max(P=>P.Precio);
             //Console.WriteLine(mas);
@@ -170,10 +181,16 @@ namespace Practica_LINQ_CI
             //foreach (var item in lst)
             //    Console.WriteLine(item.Stock);
             #endregion
-            // 21. Contar cuántos productos hay en la categoría "Audio".
+            #region // 21. Contar cuántos productos hay en la categoría "Audio".
+            //var cat=lst.Count(x=>x.Categoria=="Audio");
+            //Console.WriteLine(cat);
+            #endregion
             // 22. Agrupar los productos por categoría.
             // 23. Obtener la categoría con más productos.
-            // 24. Obtener el stock total de todos los productos.
+            #region // 24. Obtener el stock total de todos los productos.
+            //var tal =lst.Sum(x => x.Stock);
+            //Console.WriteLine(tal);
+            #endregion
             // 25. Obtener el producto con el nombre más largo.
             // 26. Obtener el producto con la descripción más corta.
             #region  27. Filtrar los productos cuya descripción contenga la palabra "pantalla".
@@ -184,6 +201,7 @@ namespace Practica_LINQ_CI
 
             #endregion
             // 28. Obtener el promedio de stock de los productos de la categoría "Almacenamiento".
+
             // 29. Obtener los productos creados en una fecha específica (20/12/2022).
             #region 30. Obtener los productos cuya ID sea par.
 
@@ -226,14 +244,8 @@ namespace Practica_LINQ_CI
             // 39. Obtener los productos que tengan exactamente dos palabras en su nombre.
             #region 40. Obtener la cantidad de productos que no pertenecen a la categoría "General".
 
-            //var gene = (from n in lst where n.Categoria != "General" select n).ToList();
-            //int cantidadProductos = gene.Count();
-            //Console.WriteLine(cantidadProductos);
-
-
-
-            //foreach (var c in gene)
-            //    Console.WriteLine(c.Nombre);
+            //var ge = lst.Count(x => x.Categoria != "General");
+            //Console.WriteLine(ge);
             #endregion
 
 
