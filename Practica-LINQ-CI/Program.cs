@@ -248,11 +248,17 @@ namespace Practica_LINQ_CI
             //foreach (var item in par)
             //    Console.WriteLine(item.Id);
             #endregion
-            // 32. Obtener los productos cuyo precio tenga un decimal mayor a .50.
+            #region  // 32. Obtener los productos cuyo precio tenga un decimal mayor a .50.
 
+            //var de = from i in lst where i.Precio % 1 > 0.50m select i;
+
+            //foreach (var dc2 in de)
+            //    Console.WriteLine($"{dc2.Nombre}| {dc2.Precio}");
+            #endregion
 
             // 33. Obtener los productos cuyo nombre tenga más de 10 caracteres.
             // 34. Obtener los productos cuyo stock sea un número primo.
+
             #region 35. Obtener los productos cuyo nombre contenga la palabra "Pro".
             //var let = lst.Where(x => x.Nombre.ToLower().Contains("pro")); 
 
