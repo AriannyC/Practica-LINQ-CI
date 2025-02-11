@@ -42,14 +42,22 @@ namespace Practica_LINQ_CI
             };
 
             #region 1. Obtener todos los productos de la lista.
+            //var obt = lst.ToList();
 
+            //foreach ( var item in obt )
+            //    Console.WriteLine($"{item.Id} | {item.Nombre} | {item.Descripcion}| {item.Precio}| {item.Categoria} | {item.FechaCreacion} | {item.Stock}" );
 
 
             #endregion
 
 
-            // 2. Obtener los nombres de todos los productos.
+            #region  2. Obtener los nombres de todos los productos.
 
+            //var obt = lst.Select(X=>X.Nombre);
+
+            //foreach (var item in obt)
+            //    Console.WriteLine(item);
+            #endregion
 
 
 
@@ -67,6 +75,7 @@ namespace Practica_LINQ_CI
 
             #endregion
             // 5. Obtener los productos de la categoría "Electrónica".
+
             #region 6. Obtener los productos cuyo nombre comience con la letra 'L'.
             //var let = lst.Where(x => x.Nombre.StartsWith("L"));
 
@@ -115,9 +124,24 @@ namespace Practica_LINQ_CI
             //    Console.WriteLine(item.Stock);
             #endregion
 
-            // 12. Obtener los primeros 5 productos más caros.
-            // 13. Obtener los 10 productos con menor stock.
-            // 14. Obtener la cantidad total de productos en la lista.
+            #region// 12. Obtener los primeros 5 productos más caros.
+            //var obt = lst.OrderByDescending(X => X.Precio).Take(5);
+            //foreach (var item in obt)
+            //    Console.WriteLine(item.Precio);
+            #endregion
+
+            #region // 13. Obtener los 10 productos con menor stock.
+            //var ascen = lst.OrderBy(x => x.Stock).Take(10);
+
+            //foreach (var item in ascen)
+            //    Console.WriteLine(item.Stock);
+            #endregion
+
+            #region // 14. Obtener la cantidad total de productos en la lista.
+            
+
+
+            #endregion
             #region 15. Obtener la suma de todos los precios de los productos.
 
             //decimal res= lst.Sum(p=> p.Precio);
@@ -214,7 +238,7 @@ namespace Practica_LINQ_CI
 
 
 
-          
+
 
             Console.ReadLine();
 
