@@ -12,17 +12,7 @@ namespace EjemLinq
         static void Main(string[] args)
         {
 
-            List<productos> lst = new List<productos>
-            {
-                new productos  { Id = 1, Nombre = "Laptop Dell", Descripcion = "Laptop de 15 pulgadas",
-                    Precio = 850.99m, Stock = 10, Categoria = "Electrónica", FechaCreacion = DateTime.Now },
-    new productos { Id = 2, Nombre = "Mouse Logitech", Descripcion = "Mouse inalámbrico",
-        Precio = 25.50m, Stock = 50, Categoria = "Accesorios", FechaCreacion = DateTime.Now },
-    new productos { Id = 3, Nombre = "Teclado Mecánico", Descripcion = "Teclado mecánico RGB",
-        Precio = 75.00m, Stock = 30, Categoria = "Accesorios", FechaCreacion = DateTime.Now },
-    new productos { Id = 4, Nombre = "Monitor Samsung", Descripcion = "Monitor 24 pulgadas Full HD", 
-        Precio = 150.75m, Stock = 20, Categoria = "Electrónica", FechaCreacion = DateTime.Now }
-            };
+            
 
 
 
@@ -42,10 +32,10 @@ namespace EjemLinq
 
 
             
-            var tdp= lst.ToList();
+            //var tdp= lst.ToList();
 
-            foreach (var item in tdp)
-                Console.WriteLine(item.Nombre);
+           // foreach (var item in tdp)
+             //   Console.WriteLine(item.Nombre);
 
 
             
