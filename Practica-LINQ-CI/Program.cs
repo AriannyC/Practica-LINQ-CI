@@ -16,29 +16,59 @@ namespace Practica_LINQ_CI
 
             List<Producto> lst = new List<Producto>
             {
-                new Producto  { Id = 1, Nombre = "Laptop Dell", Descripcion = "Laptop de 15 pulgadas",
-                    Precio = 850.99m, Stock = 7, Categoria = "Electrónica", FechaCreacion = DateTime.Now },
-    new Producto { Id = 2, Nombre = "Mouse Logitech", Descripcion = "Mouse inalámbrico",
-        Precio = 25.50m, Stock = 50, Categoria = "Accesorios", FechaCreacion = DateTime.Now },
-    new Producto { Id = 3, Nombre = "Teclado Mecánico", Descripcion = "Teclado mecánico RGB",
-        Precio = 75.00m, Stock = 30, Categoria = "Accesorios", FechaCreacion = DateTime.Now },
-    new Producto { Id = 4, Nombre = "Monitor Samsung", Descripcion = "Monitor 24 pulgadas Full HD",
-        Precio = 150.75m, Stock = 20, Categoria = "Electrónica", FechaCreacion = DateTime.Now },
+               new Producto { Id = 1, Nombre = "Laptop Dell", Descripcion = "Laptop de 15 pulgadas", Precio = 850.99m, Stock = 7, Categoria = "Electrónica", FechaCreacion = new DateTime(2022, 12, 1) },
+new Producto { Id = 2, Nombre = "Mouse Logitech", Descripcion = "Mouse inalámbrico", Precio = 25.50m, Stock = 50, Categoria = "Accesorios", FechaCreacion = new DateTime(2022, 12, 5) },
+new Producto { Id = 3, Nombre = "Teclado Mecánico", Descripcion = "Teclado mecánico RGB", Precio = 75.00m, Stock = 30, Categoria = "Accesorios", FechaCreacion = new DateTime(2022, 12, 10) },
+new Producto { Id = 4, Nombre = "Monitor Samsung", Descripcion = "Monitor 24 pulgadas Full HD", Precio = 150.75m, Stock = 20, Categoria = "Electrónica", FechaCreacion = new DateTime(2022, 12, 15) },
 
-    new Producto { Id = 5, Nombre = "Monitor Samsungn", Descripcion = "Monitor 24 pulgadas Full HD",
-        Precio = 150.75m, Stock = 20, Categoria = "General", FechaCreacion = DateTime.Now },
-    new Producto { Id = 6, Nombre = "Tablet Lenovo", Descripcion = "Tablet 10 pulgadas PANTALLA", Precio = 180.00m, Stock = 25, Categoria = "Electrónica", FechaCreacion = DateTime.Now },
-    new Producto { Id = 7, Nombre = "Audífonos Sony", Descripcion = "Audífonos con cancelación de ruido", Precio = 220.00m, Stock = 12, Categoria = "Audio", FechaCreacion = DateTime.Now },
-    new Producto { Id = 8, Nombre = "Cámara Canon", Descripcion = "Cámara profesional", Precio = 1200.00m, Stock = 8, Categoria = "Fotografía", FechaCreacion = DateTime.Now },
-    new Producto { Id = 9, Nombre = "Silla Gamer", Descripcion = "Silla ergonómica para gaming", Precio = 199.99m, Stock = 18, Categoria = "Muebles", FechaCreacion = DateTime.Now },
-    new Producto { Id = 10, Nombre = "Disco Duro Externo", Descripcion = "Disco duro 1TB", Precio = 89.99m, Stock = 35, Categoria = "Almacenamiento", FechaCreacion = DateTime.Now },
-    new Producto { Id = 11, Nombre = "Router TP-Link", Descripcion = "Router inalámbrico Wi-Fi 6", Precio = 110.50m, Stock = 22, Categoria = "Redes", FechaCreacion = DateTime.Now },
-    new Producto { Id = 12, Nombre = "Smartwatch Apple", Descripcion = "Apple Watch Series 7", Precio = 399.00m, Stock = 14, Categoria = "Wearables", FechaCreacion = DateTime.Now },
-    new Producto{ Id = 13, Nombre = "Impresora Epson", Descripcion = "Impresora multifuncional", Precio = 250.99m, Stock = 11, Categoria = "Oficina", FechaCreacion = DateTime.Now },
-    new Producto{ Id = 14, Nombre = "Auriculares JBL", Descripcion = "Auriculares Bluetooth", Precio = 59.99m, Stock = 40, Categoria = "Audio", FechaCreacion = DateTime.Now },
-    new Producto{ Id = 15, Nombre = "Power Bank Xiaomi", Descripcion = "Cargador portátil 20000mAh", Precio = 35.99m, Stock = 28, Categoria = "Accesorios", FechaCreacion = DateTime.Now },
-    new Producto{ Id = 16, Nombre = "Tarjeta Gráfica Nvidia", Descripcion = "RTX 3060 Ti", Precio = 550.00m, Stock = 7, Categoria = "Hardware", FechaCreacion = DateTime.Now },
-        new Producto{ Id = 17, Nombre = "Iphone pro max", Descripcion = "RTX 3060 Ti", Precio = 550.00m, Stock = 7, Categoria = "Hardware", FechaCreacion = DateTime.Now }
+new Producto { Id = 5, Nombre = "Monitor Samsungn", Descripcion = "Monitor 24 pulgadas Full HD", Precio = 150.75m, Stock = 20, Categoria = "General", FechaCreacion = new DateTime(2022, 12, 18) },
+new Producto { Id = 6, Nombre = "Tablet Lenovo", Descripcion = "Tablet 10 pulgadas PANTALLA", Precio = 180.00m, Stock = 25, Categoria = "Electrónica", FechaCreacion = new DateTime(2022, 12, 20) },
+new Producto { Id = 7, Nombre = "Audífonos Sony", Descripcion = "Audífonos con cancelación de ruido", Precio = 220.00m, Stock = 12, Categoria = "Audio", FechaCreacion = new DateTime(2022, 12, 22) },
+new Producto { Id = 8, Nombre = "Cámara Canon", Descripcion = "Cámara profesional", Precio = 1200.00m, Stock = 8, Categoria = "Fotografía", FechaCreacion = new DateTime(2022, 12, 25) },
+new Producto { Id = 9, Nombre = "Silla Gamer", Descripcion = "Silla ergonómica para gaming", Precio = 199.99m, Stock = 18, Categoria = "Muebles", FechaCreacion = new DateTime(2022, 12, 30) },
+new Producto { Id = 10, Nombre = "Disco Duro Externo", Descripcion = "Disco duro 1TB", Precio = 89.99m, Stock = 35, Categoria = "Almacenamiento", FechaCreacion = new DateTime(2023, 1, 2) },
+new Producto { Id = 11, Nombre = "Router TP-Link", Descripcion = "Router inalámbrico Wi-Fi 6", Precio = 110.50m, Stock = 22, Categoria = "Redes", FechaCreacion = new DateTime(2023, 1, 5) },
+new Producto { Id = 12, Nombre = "Smartwatch Apple", Descripcion = "Apple Watch Series 7", Precio = 399.00m, Stock = 14, Categoria = "Wearables", FechaCreacion = new DateTime(2023, 1, 10) },
+new Producto { Id = 13, Nombre = "Impresora Epson", Descripcion = "Impresora multifuncional", Precio = 250.99m, Stock = 11, Categoria = "Oficina", FechaCreacion = new DateTime(2023, 1, 12) },
+new Producto { Id = 14, Nombre = "Auriculares JBL", Descripcion = "Auriculares Bluetooth", Precio = 59.99m, Stock = 40, Categoria = "Audio", FechaCreacion = new DateTime(2023, 1, 15) },
+new Producto { Id = 15, Nombre = "Power Bank Xiaomi", Descripcion = "Cargador portátil 20000mAh", Precio = 35.99m, Stock = 28, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 1, 20) },
+new Producto { Id = 16, Nombre = "Tarjeta Gráfica Nvidia", Descripcion = "RTX 3060 Ti", Precio = 550.00m, Stock = 7, Categoria = "Hardware", FechaCreacion = new DateTime(2023, 1, 25) },
+new Producto { Id = 17, Nombre = "Iphone pro max", Descripcion = "RTX 3060 Ti", Precio = 550.00m, Stock = 7, Categoria = "Hardware", FechaCreacion = new DateTime(2023, 2, 1) },
+        new Producto { Id = 18, Nombre = "Impresora HP", Descripcion = "Impresora multifuncional láser", Precio = 189.99m, Stock = 15, Categoria = "Oficina", FechaCreacion = new DateTime(2023, 2, 5) },
+new Producto { Id = 19, Nombre = "Altavoces Bose", Descripcion = "Altavoces Bluetooth", Precio = 300.00m, Stock = 10, Categoria = "Audio", FechaCreacion = new DateTime(2023, 2, 7) },
+new Producto { Id = 20, Nombre = "Silla Ergonómica", Descripcion = "Silla ergonómica ajustable", Precio = 120.00m, Stock = 50, Categoria = "Muebles", FechaCreacion = new DateTime(2023, 2, 10) },
+new Producto { Id = 21, Nombre = "Cámara Sony", Descripcion = "Cámara compacta digital", Precio = 450.00m, Stock = 5, Categoria = "Fotografía", FechaCreacion = new DateTime(2023, 2, 12) },
+new Producto { Id = 22, Nombre = "Laptop HP", Descripcion = "Laptop de 14 pulgadas con Intel Core i5", Precio = 700.00m, Stock = 30, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 2, 15) },
+new Producto { Id = 23, Nombre = "Monitor LG", Descripcion = "Monitor 27 pulgadas 4K", Precio = 250.00m, Stock = 20, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 2, 18) },
+new Producto { Id = 24, Nombre = "Teclado Logitech", Descripcion = "Teclado mecánico con retroiluminación", Precio = 85.00m, Stock = 40, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 2, 20) },
+new Producto { Id = 25, Nombre = "Ratón Razer", Descripcion = "Ratón gaming con 16K DPI", Precio = 70.00m, Stock = 50, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 2, 22) },
+new Producto { Id = 26, Nombre = "Smartphone Samsung", Descripcion = "Samsung Galaxy S21 5G", Precio = 999.99m, Stock = 10, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 2, 24) },
+new Producto { Id = 27, Nombre = "Cargador inalámbrico", Descripcion = "Cargador inalámbrico para móviles", Precio = 29.99m, Stock = 100, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 3, 1) },
+new Producto { Id = 28, Nombre = "Auriculares Beats", Descripcion = "Auriculares inalámbricos con cancelación de ruido", Precio = 250.00m, Stock = 15, Categoria = "Audio", FechaCreacion = new DateTime(2023, 3, 5) },
+new Producto { Id = 29, Nombre = "Router Netgear", Descripcion = "Router Wi-Fi 6 de alto rendimiento", Precio = 130.00m, Stock = 25, Categoria = "Redes", FechaCreacion = new DateTime(2023, 3, 8) },
+new Producto { Id = 30, Nombre = "Tablet Samsung", Descripcion = "Tablet Samsung Galaxy Tab S7", Precio = 499.00m, Stock = 30, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 3, 10) },
+new Producto { Id = 31, Nombre = "Power Bank Anker", Descripcion = "Cargador portátil 20000mAh", Precio = 45.00m, Stock = 40, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 3, 12) },
+new Producto { Id = 32, Nombre = "Smartwatch Samsung", Descripcion = "Galaxy Watch 4", Precio = 250.00m, Stock = 25, Categoria = "Wearables", FechaCreacion = new DateTime(2023, 3, 15) },
+new Producto { Id = 33, Nombre = "Cámara de seguridad", Descripcion = "Cámara de vigilancia 4K", Precio = 180.00m, Stock = 15, Categoria = "Seguridad", FechaCreacion = new DateTime(2023, 3, 17) },
+new Producto { Id = 34, Nombre = "Impresora 3D", Descripcion = "Impresora 3D para hogar", Precio = 350.00m, Stock = 7, Categoria = "Oficina", FechaCreacion = new DateTime(2023, 3, 20) },
+new Producto { Id = 35, Nombre = "Silla Gamer DXRacer", Descripcion = "Silla gamer ergonómica", Precio = 450.00m, Stock = 12, Categoria = "Muebles", FechaCreacion = new DateTime(2023, 3, 22) },
+new Producto { Id = 36, Nombre = "Cámara GoPro", Descripcion = "Cámara deportiva resistente al agua", Precio = 300.00m, Stock = 10, Categoria = "Fotografía", FechaCreacion = new DateTime(2023, 3, 24) },
+new Producto { Id = 37, Nombre = "Monitor Acer", Descripcion = "Monitor curvo de 27 pulgadas", Precio = 220.00m, Stock = 20, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 3, 26) },
+new Producto { Id = 38, Nombre = "Ratón Corsair", Descripcion = "Ratón para gaming con RGB", Precio = 50.00m, Stock = 40, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 3, 28) },
+new Producto { Id = 39, Nombre = "Laptop Asus", Descripcion = "Laptop gamer con Intel Core i7", Precio = 999.00m, Stock = 15, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 4, 1) },
+new Producto { Id = 40, Nombre = "Cargador Solar", Descripcion = "Cargador solar para dispositivos móviles", Precio = 40.00m, Stock = 50, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 4, 3) },
+new Producto { Id = 41, Nombre = "Teclado Razer", Descripcion = "Teclado mecánico gaming", Precio = 100.00m, Stock = 30, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 4, 5) },
+new Producto { Id = 42, Nombre = "Router Asus", Descripcion = "Router Wi-Fi 6 de gama alta", Precio = 120.00m, Stock = 20, Categoria = "Redes", FechaCreacion = new DateTime(2023, 4, 8) },
+new Producto { Id = 43, Nombre = "Smartphone Xiaomi", Descripcion = "Xiaomi Redmi Note 10", Precio = 200.00m, Stock = 15, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 4, 10) },
+new Producto { Id = 44, Nombre = "Auriculares Bose QC35", Descripcion = "Auriculares Bluetooth con cancelación de ruido", Precio = 350.00m, Stock = 10, Categoria = "Audio", FechaCreacion = new DateTime(2023, 4, 12) },
+new Producto { Id = 45, Nombre = "Impresora Brother", Descripcion = "Impresora láser multifuncional", Precio = 220.00m, Stock = 18, Categoria = "Oficina", FechaCreacion = new DateTime(2023, 4, 14) },
+new Producto { Id = 46, Nombre = "Silla Gamer Noblechairs", Descripcion = "Silla ergonómica premium para gaming", Precio = 550.00m, Stock = 5, Categoria = "Muebles", FechaCreacion = new DateTime(2023, 4, 16) },
+new Producto { Id = 47, Nombre = "Cámara Nikon", Descripcion = "Cámara DSLR profesional", Precio = 1300.00m, Stock = 8, Categoria = "Fotografía", FechaCreacion = new DateTime(2023, 4, 18) },
+new Producto { Id = 48, Nombre = "Monitor Dell", Descripcion = "Monitor 27 pulgadas Full HD", Precio = 180.00m, Stock = 25, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 4, 20) },
+new Producto { Id = 49, Nombre = "Ratón Logitech G", Descripcion = "Ratón gaming con 12 botones programables", Precio = 60.00m, Stock = 50, Categoria = "Accesorios", FechaCreacion = new DateTime(2023, 4, 22) },
+new Producto { Id = 50, Nombre = "Laptop MSI", Descripcion = "Laptop gamer con RTX 3070", Precio = 1500.00m, Stock = 10, Categoria = "Electrónica", FechaCreacion = new DateTime(2023, 4, 25) }
+
+
 
 
             };
@@ -217,8 +247,15 @@ namespace Practica_LINQ_CI
             //var tal =lst.Sum(x => x.Stock);
             //Console.WriteLine(tal);
             #endregion
-            // 25. Obtener el producto con el nombre más largo.
-            // 26. Obtener el producto con la descripción más corta.
+            #region // 25. Obtener el producto con el nombre más largo.
+            //var lar= lst.OrderByDescending(x=> x.Nombre.Length).First();
+            //Console.WriteLine(lar.Nombre);
+
+            #endregion
+            #region // 26. Obtener el producto con la descripción más corta.
+            //var lar = lst.OrderBy(x => x.Nombre.Length).First();
+            //Console.WriteLine(lar.Nombre);
+            #endregion
             #region  27. Filtrar los productos cuya descripción contenga la palabra "pantalla".
             //var let = lst.Where(x => x.Descripcion.ToLower().Contains("pantalla"));
 
@@ -234,6 +271,7 @@ namespace Practica_LINQ_CI
 
 
             // 29. Obtener los productos creados en una fecha específica (20/12/2022).
+            
             #region 30. Obtener los productos cuya ID sea par.
 
             //var par= from r in lst where r.Id % 2==0 select r;
@@ -256,7 +294,12 @@ namespace Practica_LINQ_CI
             //    Console.WriteLine($"{dc2.Nombre}| {dc2.Precio}");
             #endregion
 
-            // 33. Obtener los productos cuyo nombre tenga más de 10 caracteres.
+            #region // 33. Obtener los productos cuyo nombre tenga más de 10 caracteres.
+            //var car = lst.Where(X => X.Nombre.Length > 10);
+            //foreach(var item in car)
+            //    Console.WriteLine(item.Nombre);
+            #endregion
+
             // 34. Obtener los productos cuyo stock sea un número primo.
             ////var sr = from i in lst where i.Stock > 1 && i.Stock % 2 != 0 select i;
 
@@ -280,14 +323,25 @@ namespace Practica_LINQ_CI
             //foreach (var n in mult)
             //    Console.WriteLine(n.Stock);
             #endregion
-            // 37. Obtener los productos que tengan una descripción con más de 20 caracteres.
+            #region // 37. Obtener los productos que tengan una descripción con más de 20 caracteres.
+            //var lar = lst.Where(x => x.Descripcion.Length > 20);
+
+            //foreach(var x in lar)
+            //    Console.WriteLine(x.Descripcion);
+            #endregion
+
             #region  // 38. Obtener los productos cuyo precio sea un número redondo (sin decimales).
             //var de = lst.Where(x => x.Precio % 1 == 0);
 
             //foreach(var x in de)
             //    Console.WriteLine(x.Precio);
             #endregion
-            // 39. Obtener los productos que tengan exactamente dos palabras en su nombre.
+            #region // 39. Obtener los productos que tengan exactamente dos palabras en su nombre.
+            //var dv = from i in lst where i.Nombre.Split(' ').Length == 2 select i;
+
+            //foreach ( var v in dv )
+            //    Console.WriteLine( v.Nombre );
+            #endregion
             #region 40. Obtener la cantidad de productos que no pertenecen a la categoría "General".
 
             //var ge = lst.Count(x => x.Categoria != "General");
